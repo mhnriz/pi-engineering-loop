@@ -1,0 +1,29 @@
+# node / dependencies
+node_modules/
+*.log
+npm-debug.log*
+
+# build / test output
+dist/
+coverage/
+*.tsbuildinfo
+
+# local checkpoint/test fixtures
+tests/.checkpoints/
+tests/fixtures/
+*.el16cptest*
+
+# temporary files
+*.tmp
+*.bak
+*.orig
+.DS_Store
+
+# secrets
+.env
+.env.*
+*.pem
+*.key
+!docs/**/*.md
+
+# never ignore source, agents, docs, or package metadata

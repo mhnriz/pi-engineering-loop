@@ -1,0 +1,42 @@
+{
+  "name": "pi-engineering-loop",
+  "version": "1.0.0-beta.1",
+  "description": "A bounded autonomous engineering workflow for Pi with planning, isolated scouting and verification, change safety, checkpoints, and rollback.",
+  "license": "MIT",
+  "keywords": [
+    "pi-package",
+    "pi",
+    "pi-coding-agent",
+    "engineering",
+    "agent",
+    "autonomous",
+    "subagents"
+  ],
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "files": [
+    "extension/",
+    "agents/",
+    "docs/",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "pi": {
+    "extensions": [
+      "./extension/index.ts"
+    ],
+    "subagents": {
+      "agents": [
+        "./agents"
+      ]
+    }
+  },
+  "pi-subagents": {
+    "agents": [
+      "./agents"
+    ]
+  }
+}
